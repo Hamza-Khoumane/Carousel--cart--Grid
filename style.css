@@ -3,19 +3,24 @@
 
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, min-content);
+  grid-template-rows: repeat(3, min-content);
 
   gap: 7rem;
 }
 
 .carousel__angles {
-  justify-self: center;
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
+  /* justify-self: center; */
+  justify-content: center;
 }
 
 .carousel__angles i {
   color: orange;
   border: 1px solid orange;
   padding: 1rem;
+
+  cursor: pointer;
 }
 
 .carousel__content {
@@ -23,6 +28,9 @@
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, min-content);
   justify-items: center;
+
+  /* justify-self: center;
+  text-align: center; */
   gap: 1rem;
 }
 
